@@ -18,5 +18,11 @@ pipeline {
                 echo 'build in progress'
             }
         }
+        stage('correct') {
+            steps {
+                echo 'build in progress'
+            }
+        }
+
     }
 }
