@@ -23,6 +23,12 @@ pipeline {
                 echo 'build in progress'
             }
         }
-
+        stage('finish') {
+            steps {
+                
+                echo 'Finish'
+                sh 'python3  Webhook/main.py'
+            }
+        }
     }
 }
