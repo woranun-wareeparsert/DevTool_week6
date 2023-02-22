@@ -31,4 +31,12 @@ pipeline {
             }
         }
     }
+    post {
+        success {
+            echo 'Only on Success'
+        }
+        always {
+            echo 'Cleanup after everything'
+        }
+    }
 }
