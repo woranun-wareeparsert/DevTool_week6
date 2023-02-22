@@ -9,29 +9,13 @@ pipeline {
         }
         stage('build') {
             steps {
-                
                 echo 'build in progress'
                 sh 'python3  Webhook/main.py'
             }
         }
         stage('test') {
             steps {
-                sh 'echo test-build'
-                sh 'python3 --version'
-            }
-        }
-        stage('correct') {
-            steps {
-                
-                echo 'week6 dev tool'
-                sh 'python3  Webhook/main.py'
-            }
-        }
-        stage('finish') {
-            steps {
-                
-                echo 'Finish'
-                sh 'python3  Webhook/main.py'
+                echo 'build in progress'
             }
         }
     }
