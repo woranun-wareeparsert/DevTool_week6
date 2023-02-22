@@ -13,10 +13,6 @@ pipeline {
                 sh 'python3  Webhook/main.py'
             }
         }
-        stage('test') {
-            steps {
-                echo 'build in progress'
-            }
-        }
+        
     }
 }
