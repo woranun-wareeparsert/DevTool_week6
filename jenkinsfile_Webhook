@@ -14,16 +14,23 @@ pipeline {
                 sh 'python3  Webhook/main.py'
             }
         }
-        stage('test-build') {
+        stage('test') {
             steps {
                 sh 'echo test-build'
                 sh 'python3 --version'
             }
         }
-        stage('week6') {
+        stage('correct') {
             steps {
                 
                 echo 'week6 dev tool'
+                sh 'python3  Webhook/main.py'
+            }
+        }
+        stage('finish') {
+            steps {
+                
+                echo 'Finish'
                 sh 'python3  Webhook/main.py'
             }
         }
