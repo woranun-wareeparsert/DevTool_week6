@@ -15,4 +15,19 @@ pipeline {
             }
         }
     }
+    stages {
+         stage('test-build') {
+            steps {
+                sh 'echo test-build'
+                sh 'python3 --version'
+            }
+        }
+        stage('week6') {
+            steps {
+                
+                echo 'week6 dev tool'
+                sh 'python3  Webhook/main.py'
+            }
+        }
+    }
 }
