@@ -14,9 +14,7 @@ pipeline {
                 sh 'python3  Webhook/main.py'
             }
         }
-    }
-    stages {
-         stage('test-build') {
+        stage('test-build') {
             steps {
                 sh 'echo test-build'
                 sh 'python3 --version'
